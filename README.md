@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/tudang/libpaxos-dev.svg?branch=master)](https://travis-ci.org/tudang/libpaxos-dev)
+
 ## Dependencies
 
 The code was compiled successfully on servers with Ubuntu 16.04 (Xenial).
