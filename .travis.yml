@@ -4,12 +4,10 @@ branches:
     only:
     - master
 
-matrix:
-    include:
-    # works on Precise and Trusty
-    - os: linux
-        dist: trusty
-        sudo: required
-        before_install: chmod +x ./ci/*.sh
-        install: ./ci/install_deps.sh
-        script: ./ci/build_libpaxos.sh
+os: linux
+
+before_install: chmod +x ./ci/*.sh
+
+install: ./ci/install_deps.sh
+
+script: ./ci/build_libpaxos.sh
